@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rubik+Bubbles&display=swap');
+/* font-family: "Gloria Hallelujah", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* font-family: "Anton", sans-serif; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.dark {
+  scrollbar-color: #3c424f #0a0d0f;
+}
+
+.row {
+  @apply flex flex-wrap py-8
+}
+
+.M-font {
+  font-family: "Anton", sans-serif;
+}
+
+.sub-font {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+/*-- navbar---*/
+.nav-link.active,
+.nav-link:hover,
+.acc-link:hover {
+  background-color: #1c64f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #1c64f2;
+  color: white;
+}
+
+.nav-link:hover {
+  transform: scale(1.1)translateY(-5px);
+}
+
+/* #1c64f2 */
+/* #046c4e */
+
+.nav-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* ------ product details --------*/
+
+
+.details-slider .swiper-button-prev,
+.details-slider .swiper-button-next,
+.ele-slider .swiper-button-prev,
+.ele-slider .swiper-button-next {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: 30px !important;
+  height: 30px !important;
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 30 !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  border-radius: 50%;
+  background-color: rgba(28, 99, 242, 0.763);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.details-slider .swiper-button-prev.swiper-button-disabled,
+.details-slider .swiper-button-next.swiper-button-disabled,
+.ele-slider .swiper-button-prev.swiper-button-disabled,
+.ele-slider .swiper-button-next.swiper-button-disabled {
+  pointer-events: unset !important;
+  cursor: not-allowed !important;
+}
+
+.related-slider .swiper-button-next {
+  right: 45px;
+  bottom: -35px !important;
+  transform: translateX(50%);
+  top: unset;
+  width: 55px !important;
+  height: 55px !important;
+}
+
+.related-slider .swiper-button-prev {
+  left: 0px;
+  bottom: -35px !important;
+  transform: translateX(50%);
+  top: unset;
+  width: 55px !important;
+  height: 55px !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #1c64f2;
+}
+
+/* Navigation font start */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 20px !important;
+  text-transform: none !important;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  color: white;
+  cursor: pointer;
+}
+
+/*-------------------*/
+
+.brands-slider .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.dark\:bg-zinc-950:is(.dark *) {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.729)), url(./assets/imgs/mainBg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

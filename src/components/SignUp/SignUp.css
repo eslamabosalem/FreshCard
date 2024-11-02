@@ -1,0 +1,90 @@
+/*------- signup ----------*/
+
+.dark\:focus\:ring-cyan-500:focus:is(.dark *) {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: #046c4e !important;
+}
+
+.dark\:focus\:border-cyan-500:focus:is(.dark *) {
+    --tw-border-opacity: 1;
+}
+
+.dark\:border-red-400:is(.dark *) {
+    --tw-border-opacity: 1;
+    border-color: rgb(114 31 39) !important;
+    border-width: 2px;
+}
+
+.dark\:bg-gray-700:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: #374151 !important;
+}
+
+.dark\:bg-green-100:is(.dark *),
+.dark\:bg-red-100:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: #1f2937 !important;
+    color: white !important;
+}
+
+.text-green-900 {
+    --tw-text-opacity: 1;
+    color: black !important;
+    background-color: #bcf0da !important;
+}
+
+.placeholder-red-700::placeholder {
+    color: rgb(255, 94, 94) !important;
+
+}
+
+.placeholder-green-700::placeholder {
+    color: rgb(7, 158, 70) !important;
+
+}
+
+/* .res-error{
+    animation: error 0.5s ease;
+}
+
+@keyframes error{
+    0%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
+
+.shake {
+    animation: shake .13s 3;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+
+/*-----------------------------------*/
+.dark\:bg-zinc-900:is(.dark *) {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.811), rgba(0, 0, 0, 0.795)), url(../../assets/imgs/loginBg.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+
+.bg-zinc-50 {
+    background-image: linear-gradient(45deg, rgba(203, 202, 202, 0.904), 50%, rgba(128, 128, 128, 0.499)), url(../../assets/imgs/loginBg.jpg);
+    background-position: top;
+    background-size: cover;
+}
